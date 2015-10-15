@@ -1,0 +1,9 @@
+cordova/hooks/
+cordova/plugins/
+cordova/platforms/
+cordova/resources/
+cordova/www/
+
+node_modules/
+
+*.swp
