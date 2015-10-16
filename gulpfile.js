@@ -6,7 +6,6 @@ var sass = require('gulp-sass');
 var minify = require('gulp-minify');
 var minifyCss = require('gulp-minify-css');
 var rename = require('gulp-rename');
-var sh = require('shelljs');
 
 gulp.task('default', ['build', 'sass']);
 
@@ -55,3 +54,12 @@ gulp.task('watch', function() {
     gulp.watch('src/application/**/*.js', ['build']);
 });
 
+gulp.task('install', function() {
+    bower.commands.install()
+        .on('log', function(data) {
+            gutil.log('bower', gutil.colors.cyan(data.id), data.message);
+        }).
+        on('end', function() {
+            gulp.start('default');
+        });
+});
