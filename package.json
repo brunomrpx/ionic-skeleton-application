@@ -6,7 +6,7 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://bitbucket.org/brunopx/ionic-app-skeleton/"
+    "url": "https://github.com/brunomrpx/ionic-skeleton-application"
   },
   "dependencies": {
     "gulp": "^3.5.6",
