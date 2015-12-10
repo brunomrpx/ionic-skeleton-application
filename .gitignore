@@ -1,6 +1,5 @@
 build/plugins/
 build/platforms/
-build/resources/
 build/www/
 
 node_modules/

@@ -2,6 +2,12 @@
   "name": "application",
   "private": "true",
   "devDependencies": {
+    "angular-mocks": "~1.4.*"
+  },
+  "dependencies": {
     "ionic": "driftyco/ionic-bower"
+  },
+  "resolutions": {
+    "angular": "1.4.8"
   }
 }

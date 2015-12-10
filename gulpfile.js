@@ -6,6 +6,7 @@ var sass = require('gulp-sass');
 var minify = require('gulp-minify');
 var minifyCss = require('gulp-minify-css');
 var rename = require('gulp-rename');
+var Server= require('karma').Server;
 
 var paths = {
   src: 'src',
@@ -16,6 +17,13 @@ var paths = {
 };
 
 gulp.task('default', ['build', 'sass']);
+
+gulp.task('test', function(done) {
+  new Server({
+    configFile: __dirname + '/karma.conf.js',
+    singleRun: true
+  }, done).start();
+});
 
 gulp.task('build', function() {
   gulp
