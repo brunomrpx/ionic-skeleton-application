@@ -8,6 +8,12 @@
   // module dependencies
   ModuleController.$inject = [];
 
+  /**
+   * @ngdoc controller
+   * @name ModuleController
+   * @description
+   * Example of controller
+   */
   function ModuleController() {
     var vm = this;
 
