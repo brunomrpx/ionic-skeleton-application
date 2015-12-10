@@ -20,5 +20,5 @@ $ gulp
 ```
 
 ## Considerations
-- Ionic and Cordova commands should be run in **cordova** folder.
+- Ionic and Cordova commands should be run in **build** folder.
 - This project has not any platform or plugin added
