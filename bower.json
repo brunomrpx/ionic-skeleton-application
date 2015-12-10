@@ -1,7 +1,7 @@
 {
-  "name": "Application",
+  "name": "application",
   "private": "true",
   "devDependencies": {
-    "ionic": "driftyco/ionic-bower#1.1.0"
+    "ionic": "driftyco/ionic-bower"
   }
 }
