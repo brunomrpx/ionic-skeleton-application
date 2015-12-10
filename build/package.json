@@ -24,6 +24,7 @@
   "scripts": {
     "install": "gulp install"
   },
-  "cordovaPlugins": [],
-  "cordovaPlatforms": []
+  "cordovaPlugins": [
+    "cordova-plugin-splashscreen"
+  ]
 }
