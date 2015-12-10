@@ -3,6 +3,15 @@
 
   angular
   .module('application', ['ionic'])
+  .config(function($stateProvider, $urlRouterProvider) {
+    $stateProvider
+      .state('module', {
+        url: '/module',
+        templateUrl: 'templates/module/module.html',
+        controller: 'ModuleController as vm'
+      });
+    $urlRouterProvider.otherwise('/module');
+  })
   .run(function($ionicPlatform) {
     $ionicPlatform.ready(function() {
       // Hide the accessory bar by default
