@@ -68,12 +68,14 @@ gulp.task('watch', function() {
 });
 
 gulp.task('install', function() {
-    bower.commands.install()
-    .on('log', function(data) {
-        gutil.log('bower', gutil.colors.cyan(data.id), data.message);
-    }).
-    on('end', function() {
-        gulp.start('default');
-    });
+    bower
+        .commands
+        .install()
+        .on('log', function(data) {
+            gutil.log('bower', gutil.colors.cyan(data.id), data.message);
+        })
+        .on('end', function() {
+            gulp.start('default');
+        });
 });
 
