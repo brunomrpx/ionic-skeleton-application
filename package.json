@@ -27,7 +27,7 @@
     "karma-jasmine": "^0.3.6"
   },
   "scripts": {
-    "install": "gulp install"
+    "install": "gulp install; cd build && ionic state restore"
   },
   "cordovaPlugins": [],
   "cordovaPlatforms": []
