@@ -1,8 +1,8 @@
-cordova/hooks/
-cordova/plugins/
-cordova/platforms/
-cordova/resources/
-cordova/www/
+build/hooks/
+build/plugins/
+build/platforms/
+build/resources/
+build/www/
 
 node_modules/
 
